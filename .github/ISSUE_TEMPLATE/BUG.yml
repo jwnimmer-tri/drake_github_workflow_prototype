@@ -6,18 +6,25 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-        The `#drake` posts on [StackOverflow](https://stackoverflow.com/questions/tagged/drake) also might help you find a solution.
+        The `#drake` posts on [StackOverflow](https://stackoverflow.com/questions/tagged/drake)
+        also might help you find a solution.
   - type: textarea
     id: what-happened
     attributes:
       label: What happened?
-      placeholder: Tell us what you see!  Also tell us, what did you expect to happen?  Please provide enough information so that we can reproduce your problem for ourselves.
+      placeholder:
+        Tell us what you see!  Also tell us, what did you expect to happen?
+        Please provide enough information so that we can reproduce your problem for ourselves.
     validations:
       required: true
   - type: input
     attributes:
       label: Version
-      description: What version of Drake are you using?
+      description:
+        What version of Drake are you using?
+        If you've built from source, please provide the git commit sha.
+        If you're using our official binaries, please provide the contents of
+        `.../drake/share/doc/drake/VERSION.TXT`.
       value: Unknown
   - type: dropdown
     attributes:
