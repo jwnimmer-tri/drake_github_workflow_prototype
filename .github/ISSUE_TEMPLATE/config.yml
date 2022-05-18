@@ -1,8 +1,8 @@
 blank_issues_enabled: true
 contact_links:
-  - name: Drake Questions
+  - name: Questions and Requests for Help
     url: https://github.community/
     about: Please ask and answer questions using StackOverflow; do not post questions in the Drake issues database.
-  - name: Drake Build or Installation Help
+  - name: Build or Installation Problem
     url: https://bounty.github.com/
-    about: Please inquire about installation problems using StackOverflow; do not post help requests the Drake issues database.
+    about: Please inquire about installation problems using StackOverflow; do not post problems in the Drake issues database.
