@@ -24,11 +24,11 @@ body:
         What version of Drake are you using?
         If you've built from source, please provide the git commit sha.
         If you're using our official binaries, please provide the contents of
-        `.../drake/share/doc/drake/VERSION.TXT`.
-      value: Unknown
+        `.../drake/share/doc/drake/VERSION.TXT`.  It's OK to leave this blank.
   - type: dropdown
     attributes:
       label: What operating system are you using?
+      description: It's OK to leave this blank.
       multiple: true
       options:
         - Unknown / Other
@@ -40,6 +40,7 @@ body:
   - type: dropdown
     attributes:
       label: What installation option are you using?
+      description: It's OK to leave this blank.
       multiple: true
       options:
         - Unknown / Other
