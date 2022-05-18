@@ -15,8 +15,7 @@ body:
       value: "A bug happened!"
     validations:
       required: true
-  - type: dropdown
-    id: input
+  - type: input
     attributes:
       label: Version
       description: What version of our software are you running?
