@@ -18,20 +18,33 @@ body:
   - type: input
     attributes:
       label: Version
-      description: What version of our software are you running?
+      description: What version of Drake are you using?
       value: Unknown
     validations:
       required: true
   - type: dropdown
-    id: browsers
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: What operating system are you using?
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - Unknown / Other
+        - Ubuntu 20.04
+        - Ubuntu 22.04
+        - macOS 11 (Big Sur)
+        - macOS 12 (Monterey)
+        - Other
+  - type: dropdown
+    attributes:
+      label: What installation option are you using?
+      multiple: true
+      options:
+        - Unknown / Other
+        - pip install drake
+        - apt install drake
+        - binary tar.gz download
+        - dockerhub
+        - compiled from source code using CMake
+        - compiled from source code using Bazel
   - type: textarea
     id: logs
     attributes:
