@@ -5,4 +5,4 @@ contact_links:
     about: Please ask and answer questions using StackOverflow; do not post questions in the Drake issues database.
   - name: Build or Installation Problem
     url: https://stackoverflow.com/questions/ask?tags=drake
-    about: Please inquire about installation problems using StackOverflow; do not post problems in the Drake issues database.
+    about: Please inquire about build or installation problems using StackOverflow; do not post problems in the Drake issues database.
