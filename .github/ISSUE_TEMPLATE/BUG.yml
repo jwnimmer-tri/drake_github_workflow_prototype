@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-        The #drake posts on [StackOverflow](https://stackoverflow.com/questions/tagged/drake) also might help you find a solution.
+        The `#drake` posts on [StackOverflow](https://stackoverflow.com/questions/tagged/drake) also might help you find a solution.
   - type: textarea
     id: what-happened
     attributes:
