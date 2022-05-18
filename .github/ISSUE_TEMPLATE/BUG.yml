@@ -11,8 +11,7 @@ body:
     id: what-happened
     attributes:
       label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
+      placeholder: Tell us what you see!  Also tell us, what did you expect to happen?  Please provide enough information so that we can reproduce your problem for ourselves.
     validations:
       required: true
   - type: input
