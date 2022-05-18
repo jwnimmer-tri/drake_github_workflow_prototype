@@ -20,8 +20,6 @@ body:
       label: Version
       description: What version of Drake are you using?
       value: Unknown
-    validations:
-      required: true
   - type: dropdown
     attributes:
       label: What operating system are you using?
