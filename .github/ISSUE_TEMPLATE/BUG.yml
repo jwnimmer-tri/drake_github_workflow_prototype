@@ -1,5 +1,5 @@
 name: Bug Report
-description: File a bug report
+description: File a bug report.  Please do not post _questions_ in the Drake issues database; see below for StackOverflow links.
 labels: ["type: bug"]
 body:
   - type: markdown
