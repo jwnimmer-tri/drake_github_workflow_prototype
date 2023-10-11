@@ -24,7 +24,7 @@ jobs:
         with:
           submodules: true
       - name: Setup
-        run: .github/ci_setup.bash
+        run: .github/ci_setup.sh
       # Restore the most appropriate caches.
       #
       # In the below: `github.ref` will be either "refs/pull/<pr_number>/merge"
@@ -74,7 +74,7 @@ jobs:
           du -ms ~/.cache/bazel_ci/* || true
       # Actual testing.
       - name: Build
-        run: .github/ci_build.bash
+        run: .github/ci_build.sh
       # Save the updated cache snapshots, so we never do the same work twice.
       # By default, actions/cache only saves after a successful workflow, but
       # our caches are bags of files where we only ever add new files (not change
