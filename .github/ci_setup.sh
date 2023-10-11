@@ -5,6 +5,7 @@ set -euxo pipefail
 brew analytics off
 brew update || (sleep 15; brew update)
 brew bundle --file="${BASH_SOURCE%/*}/Brewfile.wheel" --no-lock
+pip3.11 install -r "${BASH_SOURCE%/*}/requirements.txt"
 
 drake/setup/mac/source_distribution/install_prereqs_user_environment.sh
 
