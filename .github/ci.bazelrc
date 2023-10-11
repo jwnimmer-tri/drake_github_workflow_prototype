@@ -14,3 +14,4 @@ build --disk_cache /Users/runner/.cache/bazel_ci/local_disk
 
 # XXX Temporary
 build --define=WITH_SNOPT=OFF
+build:packaging --define=WITH_SNOPT=OFF
