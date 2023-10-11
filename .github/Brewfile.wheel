@@ -1,5 +1,4 @@
 brew 'bazelisk'
-brew 'eigen'
 brew 'glib'
 brew 'ipopt'
 brew 'jpeg'
