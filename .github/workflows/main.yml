@@ -23,8 +23,6 @@ jobs:
       - uses: actions/checkout@v3
         with:
           submodules: true
-      - name: Setup
-        run: .github/ci_setup.sh
       # Restore the most appropriate caches.
       #
       # In the below: `github.ref` will be either "refs/pull/<pr_number>/merge"
@@ -72,7 +70,9 @@ jobs:
         run: |
           du -ms ~/.cache/pip || true
           du -ms ~/.cache/bazel_ci/* || true
-      # Actual testing.
+      # The actual stuff we care about, buried in a pile of YAML line noise.
+      - name: Setup
+        run: .github/ci_setup.sh
       - name: Build
         run: .github/ci_build.sh
       # Save the updated cache snapshots, so we never do the same work twice.
