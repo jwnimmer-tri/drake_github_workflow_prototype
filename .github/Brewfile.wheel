@@ -1,8 +1,6 @@
 brew 'bazelisk'
 brew 'eigen'
-brew 'fmt'
 brew 'glib'
 brew 'ipopt'
 brew 'jpeg'
 brew 'pkg-config'
-brew 'spdlog'
