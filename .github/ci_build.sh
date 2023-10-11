@@ -2,9 +2,9 @@
 
 set -euxo pipefail
 
-chmod 1777 /opt
+sudo chmod 1777 /opt
 mkdir /opt/drake-wheel
-chmod 1777 /opt/drake-wheel
+sudo chmod 1777 /opt/drake-wheel
 
 cd drake
 bazel run //tools/wheel:builder -- \
