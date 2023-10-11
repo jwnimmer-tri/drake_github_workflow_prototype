@@ -13,5 +13,4 @@ fetch --disk_cache /Users/runner/.cache/bazel_ci/local_disk
 build --disk_cache /Users/runner/.cache/bazel_ci/local_disk
 
 # XXX Temporary
-info --WITH_SNOPT=OFF
-build --WITH_SNOPT=OFF
+build --define=WITH_SNOPT=OFF
