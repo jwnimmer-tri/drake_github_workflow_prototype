@@ -2,6 +2,8 @@
 
 set -euxo pipefail
 
+pwd
+
 brew analytics off
 brew update || (sleep 15; brew update)
 brew bundle --file="${BASH_SOURCE%/*}/Brewfile.wheel" --no-lock

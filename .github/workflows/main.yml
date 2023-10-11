@@ -12,7 +12,7 @@ jobs:
     runs-on: macos-13
     env:
       # This is where bazelisk caches its downloads of Bazel.
-      BAZELISK_HOME: /User/runner/.cache/bazel_ci/bazelisk
+      BAZELISK_HOME: /Users/runner/.cache/bazel_ci/bazelisk
       HOMEBREW_COLOR: 1
       HOMEBREW_CASK_OPTS: --require-sha
       HOMEBREW_CURL_RETRIES: 4

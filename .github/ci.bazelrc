@@ -7,7 +7,7 @@ common --announce_rc=yes
 
 # Put the Bazel caches somewhere the CI runner will preserve them from one run
 # to the next. (All of ~/.cache/bazel_ci/ is preserved.)
-fetch --repository_cache /User/runner/.cache/bazel_ci/externals
-build --repository_cache /User/runner/.cache/bazel_ci/externals
-fetch --disk_cache /User/runner/.cache/bazel_ci/local_disk
-build --disk_cache /User/runner/.cache/bazel_ci/local_disk
+fetch --repository_cache /Users/runner/.cache/bazel_ci/externals
+build --repository_cache /Users/runner/.cache/bazel_ci/externals
+fetch --disk_cache /Users/runner/.cache/bazel_ci/local_disk
+build --disk_cache /Users/runner/.cache/bazel_ci/local_disk
