@@ -11,3 +11,5 @@ brew bundle --file="${BASH_SOURCE%/*}/Brewfile.wheel" --no-lock
 drake/setup/mac/source_distribution/install_prereqs_user_environment.sh
 
 ln -s .github/ci.bazelrc drake/user.bazelrc
+
+ln -s $(which gfortran-12) /usr/local/bin/gfortran
