@@ -1,5 +1,3 @@
-brew 'bazelisk'
-brew 'glib'
 brew 'ipopt'
 brew 'jpeg'
 brew 'ninja'
