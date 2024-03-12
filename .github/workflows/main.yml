@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           submodules: true
-      # Restore the most appropriate caches.
+      # Restore the most appropriate cache.
       #
       # In the below: `github.ref` will be either "refs/pull/<pr_number>/merge"
       # or "refs/heads/main"; `github.run_number` is a monotonically increasing
@@ -37,8 +37,10 @@ jobs:
       # effects we should see from the `restore-keys` patterns are:
       #
       # * When building the `main` branch, we'll always pull the most recently
-      #   updated main caches. Both restore keys say "pip-refs/heads/main-" and
-      #   the prior archives are named, e.g., "pip-refs/heads/main-####-#".
+      #   updated main caches. Both restore keys say 
+      #    "bazel_ci-refs/heads/main-"
+      #   and the prior archives are named, e.g.,
+      #    "bazel_ci-refs/heads/main-####-#".
       #   GitHub will use the *most recently saved* archive name that matches
       #   the restore key prefix (no matter the lexicographic ordering of
       #   the ####-# part).
@@ -47,18 +49,9 @@ jobs:
       #   match anything, so it falls back to the main caches.
       #
       # * For subsequent builds of a PR, the first restore key, e.g.,
-      #   "pip-refs/pull/###/merge-" should match the most recently saved PR key
-      #   "pip-refs/pull/###/merge-####-#".
-      - uses: actions/cache/restore@v3
-        with:
-          path: ~/.cache/pip
-          # N.B. The "-mumble" suffix below will never match; it's a placeholder
-          # for the nonce appended to the cache key. Instead, the restore-keys
-          # will always be used for restoring.
-          key: pip-${{ github.ref }}-${{ github.run_number }}-${{ github.run_attempt }}
-          restore-keys: |
-            pip-${{ github.ref }}-
-            pip-refs/heads/main-
+      #    "bazel_ci-refs/pull/###/merge-"
+      #   should match the most recently saved PR key
+      #    "bazel_ci-refs/pull/###/merge-####-#".
       - uses: actions/cache/restore@v3
         with:
           path: ~/.cache/bazel_ci
@@ -68,7 +61,6 @@ jobs:
             bazel_ci-refs/heads/main-
       - name: Report cache sizes
         run: |
-          du -ms ~/.cache/pip || true
           du -ms ~/.cache/bazel_ci/* || true
       # The actual stuff we care about, buried in a pile of YAML line noise.
       - name: Setup
@@ -79,11 +71,6 @@ jobs:
       # By default, actions/cache only saves after a successful workflow, but
       # our caches are bags of files where we only ever add new files (not change
       # an existing files), so it's always safe to snapshot.
-      - uses: actions/cache/save@v3
-        if: always()
-        with:
-          path: ~/.cache/pip
-          key: pip-${{ github.ref }}-${{ github.run_number }}-${{ github.run_attempt }}
       - uses: actions/cache/save@v3
         if: always()
         with:
