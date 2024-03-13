@@ -1,3 +1,4 @@
+brew 'coreutils'
 brew 'ipopt'
 brew 'jpeg'
 brew 'ninja'
