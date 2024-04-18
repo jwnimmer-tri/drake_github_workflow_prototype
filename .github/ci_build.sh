@@ -8,5 +8,5 @@ sudo chmod 1777 /opt/drake-wheel
 
 cd drake
 bazel run //tools/wheel:builder -- \
-  --no-brew \
+  --no-provision \
   --output-dir /opt/drake-wheel 0.0.0
