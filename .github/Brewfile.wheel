@@ -1,5 +1,4 @@
 brew 'coreutils'
-brew 'ipopt'
 brew 'jpeg'
 brew 'ninja'
 brew 'numpy'
