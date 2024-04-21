@@ -1,3 +1,6 @@
 [submodule "drake"]
 	path = drake
 	url = git@github.com:jwnimmer-tri/drake.git
+[submodule "snopt"]
+	path = snopt
+	url = git@github.com:RobotLocomotion/snopt.git
