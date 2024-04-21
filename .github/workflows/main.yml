@@ -22,8 +22,8 @@ jobs:
       SNOPT_PATH: git
     steps:
       - uses: actions/checkout@v3
-        token: ${{ secrets.SNOPT_PAT }}
         with:
+          token: ${{ secrets.SNOPT_PAT }}
           submodules: true
       # Restore the most appropriate cache.
       #
