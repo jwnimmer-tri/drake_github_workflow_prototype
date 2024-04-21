@@ -3,4 +3,4 @@
 	url = git@github.com:jwnimmer-tri/drake.git
 [submodule "snopt"]
 	path = snopt
-	url = git@github.com:RobotLocomotion/snopt.git
+	url = git@github.com:jwnimmer-tri/snopt.git
