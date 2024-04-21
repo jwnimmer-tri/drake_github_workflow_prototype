@@ -11,7 +11,3 @@ fetch --repository_cache /Users/runner/.cache/bazel_ci/externals
 build --repository_cache /Users/runner/.cache/bazel_ci/externals
 fetch --disk_cache /Users/runner/.cache/bazel_ci/local_disk
 build --disk_cache /Users/runner/.cache/bazel_ci/local_disk
-
-# XXX Temporary
-build --define=WITH_SNOPT=OFF
-build:packaging --define=WITH_SNOPT=OFF
