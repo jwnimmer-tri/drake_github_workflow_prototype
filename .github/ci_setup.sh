@@ -13,4 +13,4 @@ ln -s $(pwd)/.github/ci.bazelrc ~/.bazelrc
 
 ln -s $(which gfortran-12) /usr/local/bin/gfortran
 
-(cd ../snopt && tar cf /tmp/snopt.tar.gz src interfaces)
+(cd snopt && tar cf /tmp/snopt.tar.gz src interfaces)
