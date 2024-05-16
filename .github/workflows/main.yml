@@ -69,6 +69,13 @@ jobs:
         run: .github/ci_setup.sh
       - name: Build
         run: .github/ci_build.sh
+      # Keep the wheels.
+      - name: Archive wheels
+        uses: actions/upload-artifact@v4
+        with:
+          name: wheels
+          path: |
+            drake/*.whl
       # Save the updated cache snapshots, so we never do the same work twice.
       # By default, actions/cache only saves after a successful workflow, but
       # our caches are bags of files where we only ever add new files (not change
