@@ -10,5 +10,3 @@ cd drake
 bazel run //tools/wheel:builder -- \
   --no-provision \
   --output-dir /opt/drake-wheel 1.29.0
-
-find . -maxdepth 2

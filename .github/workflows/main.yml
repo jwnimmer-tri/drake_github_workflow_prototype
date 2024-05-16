@@ -75,7 +75,7 @@ jobs:
         with:
           name: wheels
           path: |
-            drake/*.whl
+            /opt/drake-wheel/*.whl
       # Save the updated cache snapshots, so we never do the same work twice.
       # By default, actions/cache only saves after a successful workflow, but
       # our caches are bags of files where we only ever add new files (not change
