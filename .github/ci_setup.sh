@@ -11,6 +11,7 @@ drake/setup/mac/source_distribution/install_prereqs_user_environment.sh
 
 ln -s $(pwd)/.github/ci.bazelrc ~/.bazelrc
 
-ln -s $(which gfortran-12) /usr/local/bin/gfortran
+# Already exists?
+# ln -s $(which gfortran-12) /usr/local/bin/gfortran
 
 tar cf /tmp/snopt.tar.gz snopt/src snopt/interfaces
