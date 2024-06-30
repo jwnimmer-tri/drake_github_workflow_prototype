@@ -9,4 +9,5 @@ sudo chmod 1777 /opt/drake-wheel
 cd drake
 bazel run //tools/wheel:builder -- \
   --no-provision \
-  --output-dir /opt/drake-wheel 1.30.0
+  --snopt-path /tmp/snopt.tar.gz \
+  --output-dir /opt/drake-wheel 1.30.
