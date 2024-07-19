@@ -10,4 +10,4 @@ cd drake
 bazel run //tools/wheel:builder -- \
   --no-provision \
   --snopt-path /tmp/snopt.tar.gz \
-  --output-dir /opt/drake-wheel 0.0.0
+  --output-dir /opt/drake-wheel 1.31.0
